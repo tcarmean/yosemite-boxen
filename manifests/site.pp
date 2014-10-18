@@ -83,7 +83,6 @@ node default {
   include dropbox
   include chrome
   include vagrant
-  include scapy
   include skype
 
   # common, useful packages
