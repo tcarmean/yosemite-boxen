@@ -75,12 +75,25 @@ node default {
   ruby::version { '2.1.1': }
   ruby::version { '2.1.2': }
 
+  # Stuff added to Puppetfile
+  include macvim
+  include alfred
+  include virtualbox
+  include iterm2::stable
+  include dropbox
+  include chrome
+  include vagrant
+  include scapy
+  include skype
+
   # common, useful packages
   package {
     [
       'ack',
       'findutils',
-      'gnu-tar'
+      'gnu-tar',
+	'python',
+	'coreutils'
     ]:
   }
 
